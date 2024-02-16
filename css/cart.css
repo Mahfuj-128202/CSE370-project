@@ -1,0 +1,99 @@
+/* Top header */
+
+.top_header h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: bold;
+}
+
+.top_header .align_left {
+    flex: 1;
+    text-align: left;
+}
+
+.top_header .header-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top_header .header-logo a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cart table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #f5f5f5;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table td a {
+    display: inline-block;
+    padding: 5px;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+table td a:hover {
+    background-color: #333;
+}
+
+.check_out button {
+    background-color: #837a7a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.check_out button:hover {
+    cursor: pointer;
+    background-color: #4b4949;
+}
+
+.return {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.return button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.return button:hover {
+    background-color: #555;
+    color: #fff;
+}

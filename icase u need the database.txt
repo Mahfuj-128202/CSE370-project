@@ -1,0 +1,74 @@
+create database website;
+
+use website;
+
+CREATE TABLE user (
+    user_id VARCHAR(10) PRIMARY KEY,
+    pass VARCHAR(30),
+    name VARCHAR(30),
+    address VARCHAR(200),
+    email VARCHAR(30),
+    bank_acc INT
+);
+
+CREATE TABLE user_phone (
+    phone_id SERIAL PRIMARY KEY,
+    user_id VARCHAR(10),
+    phone_number INT,
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
+);
+
+CREATE TABLE admin (
+    admin_id VARCHAR(10) PRIMARY KEY,
+    pass VARCHAR(30)
+);
+
+CREATE TABLE inventory (
+    product_id VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(20),
+    quantity INT,
+    price INT,
+    image varchar(100)
+);
+
+CREATE TABLE cart (
+    cart_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(10),
+    product_id VARCHAR(10),
+    quantity INT,
+    unit_price INT,
+    FOREIGN KEY (user_id) REFERENCES user(user_id),
+    FOREIGN KEY (product_id) REFERENCES inventory(product_id)
+);
+
+CREATE TABLE wishlist (
+    wish_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(10),
+    product_id VARCHAR(10),
+    possible_arrival DATE,
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
+);
+
+CREATE TABLE sold (
+    sell_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(10),
+    product_id VARCHAR(10),
+    quantity int,
+    sold_date DATE
+);
+
+
+ INSERT INTO inventory (product_id, name, quantity, price, image)
+    VALUES
+    ('p-001', 'iPhone 13 Pro', 50, 1100,'img/download.jpg'),
+    ('p-002', 'Samsung Galaxy S21', 40, 800,'img/s21.jpg'),
+    ('p-003', 'iPad Air', 25, 650,'img/ipad.jpg'),
+    ('p-004', 'Google Pixel 6', 30, 600,'img/pixel.jpg'),
+    ('p-005', 'Sony Playstation 5', 20, 500,'img/ps5.jpg'),
+    ('p-006', 'Microsoft Xbox Series X', 15, 500,'img/xbox.jpg'),
+    ('p-007', 'Macbook Pro', 35, 1500,'img/macbook.jpg'),
+    ('p-008', 'Dell XPS 13', 30, 1000,'img/xps.jpg'),
+    ('p-009', 'HP Spectre x360', 20, 1300,'img/x360.jpg'),
+    ('p-010', 'Lenovo ThinkPad X1 Carbon', 25, 1500,'img/len.jpg');
+
+ALTER TABLE cart ADD CONSTRAINT positive_quantity CHECK (quantity > 0);

@@ -1,0 +1,61 @@
+/* Style for the header */
+.header {
+    background-color: #81a597;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Style for the header links */
+.header-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Style for the balance section */
+.bal {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #cfcece;
+}
+
+/* Style for the product image */
+table img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Style for the total sold and total profit section */
+h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 24px;
+}

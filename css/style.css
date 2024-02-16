@@ -1,0 +1,219 @@
+.top_header {
+    background-color: #f7f7f7; /* Set the background color */
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+  }
+  
+  .top_header .container {
+    display: flex; /* Use flexbox layout to horizontally align the content */
+    justify-content: space-between; /* Space out the content evenly */
+  }
+  
+  .top_header ul {
+    margin: 0; /* Remove default margin from the unordered lists */
+    padding: 0; /* Remove default padding from the unordered lists */
+    list-style: none; /* Remove default bullet points from the unordered lists */
+  }
+  
+  .top_header ul.header-links li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-right: 20px; /* Add some spacing between the list items */
+    font-size: 14px; /* Set the font size */
+  }
+  
+  .top_header ul.header-links li:last-child {
+    margin-right: 0; /* Remove the margin from the last list item */
+  }
+  
+  .top_header ul.header-links li a {
+    color: #333; /* Set the link color */
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .top_header ul.header-links li a:hover {
+    color: #f00; /* Change the link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .top_header ul.header-links.pull-right li {
+    margin-right: 0; /* Reset the margin for the right aligned list items */
+    margin-left: auto; /* Push the right aligned list items to the right */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  
+  
+  .login-button {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+  .search-bar {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    background-image: url('none'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .button-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #555;
+  }
+  
+
+.product-box {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    float: left;
+    text-align: center;
+}
+
+.product-box img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-box button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .product-box button:hover {
+    background-color: #3e8e41; 
+  }
+  
+  .product-box button:active, .product-box button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .product-box button.add-to-cart {
+    background-color: #4CAF50;
+  }
+  
+  .product-box button.add-to-cart:hover {
+    background-color: #3e8e41;
+  }
+  
+  .product-box button.add-to-wishlist {
+    background-color: #f44336;
+  }
+  
+  .product-box button.add-to-wishlist:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Body background color */
+.body {
+    background-color: #f5f5f5;
+  }
+  
+  /* Main header background color */
+  .top_header {
+    background-color: #b9b9b9;
+  }
+  
+  /* Main header text color */
+  header h1, header nav a {
+    color: #333333;
+  }
+  
+  .left_of_searchbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .cart li a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cart li a:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  }
+  
+  .top_header .header-links.pull-right li a {
+    color: #333; /* default button text color */
+    text-decoration: none; /* remove underline */
+    padding: 5px 10px; /* add some padding */
+    transition: all 0.3s ease; /* add transition effect */
+  }
+  
+  .top_header .header-links.pull-right li a:hover {
+    color: #fff; /* change button text color on hover */
+    background-color: #333; /* change button background color on hover */
+  }
+  
